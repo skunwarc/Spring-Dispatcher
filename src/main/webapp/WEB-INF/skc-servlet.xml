@@ -5,12 +5,13 @@
 
 	<bean id="helloController"
 		class="com.abc.controllers.HelloController">
-
 	</bean>
 
 	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="suffix" value=".jsp" />
+		<property name="prefix" value="pages/" />
+		
 	</bean>
 
 </beans>

@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloController {
 
 	@RequestMapping(value="hello", method = RequestMethod.GET)
-	public void helloDisplay() {
+	public String helloDisplay() {
 		System.out.println("Print hello from method helloDisplay");
+		return "hello-page";
 	}
 	
 }

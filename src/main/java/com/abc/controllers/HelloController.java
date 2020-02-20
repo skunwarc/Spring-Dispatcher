@@ -12,15 +12,16 @@ public class HelloController {
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public ModelAndView helloDisplay() {
-		
+
 		ModelAndView modelAndView = new ModelAndView();
 
 		modelAndView.setViewName("hello");
 		modelAndView.addObject("location", "fairafx");
-		
+
 		Customer customer = new Customer();
-		customer.setEmail("abc@gmail.com");
 		customer.setName("Aman");
+		customer.setEmail("abc@gmail.com");
+
 		modelAndView.addObject("customer-info", customer);
 		return modelAndView;
 

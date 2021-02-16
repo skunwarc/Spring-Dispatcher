@@ -7,7 +7,7 @@
 		class="com.abc.controllers.HelloController">
 	</bean>
 
-<bean id="customerController"
+	<bean id="customerController"
 		class="com.abc.controllers.CustomerController">
 	</bean>
 
@@ -15,7 +15,6 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="suffix" value=".jsp" />
 		<property name="prefix" value="pages/" />
-		
 	</bean>
 
 </beans>
